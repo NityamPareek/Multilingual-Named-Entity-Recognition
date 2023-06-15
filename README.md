@@ -1,1 +1,21 @@
 # Multilingual-Named-Entity-Recognition
+
+# Objective
+
+This repository contains code in which a single transformer model called XLM-RoBERTa has be fine-tuned to perform named entity recognition (NER) across 4 languages - German, French, Italian, and English. NER is a common NLP task that identifies entities like people, organizations, or locations in text. These entities can be used for various applications such as gaining insights from company documents, augmenting the quality of search engines, or simply building a structured database from a corpus.
+
+To simulate the real world, I have assumed that we want to perform NER for a customer based in Switzerland, where there are 4 national languages, with English often serving as a bridge between them. I wanted to build the system for Indian languages but there is a huge lack of data in Indian languages compared to European languages (hopefully that changes!).
+
+# Dataset
+
+I have used a subset of the Cross-lingual TRansfer Evaluation of Multilingual Encoders (XTREME) benchmark called WikiANN or PAN-X. This dataset consists of Wikipedia articles in many languages, including the 4 most commonly spoken languages in Switzerland: German (62.9%), French (22.9%), Italian (8.4%), and English (5.9%). Each article is annotated with LOC (location), PER (person), and ORG (organization) tags in the “inside-outside-beginning” (IOB2) format.
+
+To make a realistic Swiss corpus, I sampled the German (de), French (fr), Italian (it), and English (en) corpora from PAN-X according to their spoken proportions.
+
+# Choice of Transformer
+
+Multilingual transformers involve similar architectures and training procedures as their monolingual counterparts, except that the corpus used for pretraining consists of documents in many languages. Despite receiving no explicit information to differentiate among the languages, the resulting linguistic representations are able to generalize well across languages for a variety of downstream tasks.
+
+For our task, we consider the XLM-RoBERTa model or XLM-R. XLM-R uses only MLM as a pretraining objective for 100 languages, and its pre-training corpus is several orders of magnitude larger than the ones used
+in earlier models.
+
