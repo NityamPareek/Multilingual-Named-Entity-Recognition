@@ -19,3 +19,17 @@ Multilingual transformers involve similar architectures and training procedures 
 For our task, we consider the XLM-RoBERTa model or XLM-R. XLM-R uses only MLM as a pretraining objective for 100 languages, and its pre-training corpus is several orders of magnitude larger than the ones used
 in earlier models.
 
+# Tokenizer
+
+XLM-R uses the SentencePiece tokenizer, which is based on a type of subword segmentation called Unigram and encodes each input text as a sequence of Unicode characters. This last feature is especially useful for multilingual corpora since it allows SentencePiece to be agnostic about accents, punctuation, and the fact that many languages, like Japanese, do not have whitespace characters.
+
+# Procedure for Getting to the Final Model
+
+1. Made a corpus of data from the PAN-X dataset
+2. Tokenized the input corpus
+3. Imported the base pre-trained XLM-R model from Hugging Face
+4. Fine tuned the model on the multilingual corpus
+5. Deployed the model using Gradio Spaces on Hugging Face
+
+# Experiments and Findings Along the Way
+
