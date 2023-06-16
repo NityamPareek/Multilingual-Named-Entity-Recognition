@@ -2,7 +2,7 @@
 
 # Video Demonstration of Working
 
-<center>https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/bf19f33d-716a-4fba-a427-83241f17b5bc</center>
+https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/bf19f33d-716a-4fba-a427-83241f17b5bc
 
 # Objective
 
@@ -44,7 +44,7 @@ XLM-R uses the SentencePiece tokenizer, which is based on a type of subword segm
 2. An increase in training data for one language improves the performance of the model in other languages as well
 Following is a table of F1 scores after various modes of training:
 
-<center>![image](https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/0d585931-2612-4c8a-9f52-72eb40fe854c)</center>
+![image](https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/0d585931-2612-4c8a-9f52-72eb40fe854c)
 
 # Test Your Own Inputs!
 
