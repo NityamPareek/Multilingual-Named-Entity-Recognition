@@ -35,5 +35,17 @@ XLM-R uses the SentencePiece tokenizer, which is based on a type of subword segm
 4. Fine tuned the model on the multilingual corpus
 5. Deployed the model using Gradio Spaces on Hugging Face
 
-# Experiments and Findings Along the Way
+# Results and Findings Along the Way
 
+1. For a small corpus, zero shot cross lingual transfer outperforms fine-tuning. As we increase the corpus size for fine tuning, we see an improvement in performance as compared to zero shot transfer.
+
+<center>![image](https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/eee4dc80-1672-42f8-8da3-701374b6a653)</center>
+
+2. An increase in training data for one language improves the performance of the model in other languages as well
+Following is a table of F1 scores after various modes of training:
+
+<center>![image](https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/0d585931-2612-4c8a-9f52-72eb40fe854c)</center>
+
+# Test Your Own Inputs!
+
+The model has been deployed using Gradio Spaces on Hugging Face, you can find it <a href = "https://huggingface.co/spaces/NityamPareek/NityamPareek-xlm-roberta-base-finetuned-panx-all">here</a>.
