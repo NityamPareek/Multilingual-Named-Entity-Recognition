@@ -1,5 +1,9 @@
 # Multilingual-Named-Entity-Recognition
 
+# Video Demonstration of Working
+
+<center>https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/bf19f33d-716a-4fba-a427-83241f17b5bc</center>
+
 # Objective
 
 This repository contains code in which a single transformer model called XLM-RoBERTa has be fine-tuned to perform named entity recognition (NER) across 4 languages - German, French, Italian, and English. NER is a common NLP task that identifies entities like people, organizations, or locations in text. These entities can be used for various applications such as gaining insights from company documents, augmenting the quality of search engines, or simply building a structured database from a corpus.
