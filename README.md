@@ -39,7 +39,7 @@ XLM-R uses the SentencePiece tokenizer, which is based on a type of subword segm
 
 1. For a small corpus, zero shot cross lingual transfer outperforms fine-tuning. As we increase the corpus size for fine tuning, we see an improvement in performance as compared to zero shot transfer.
 
-![Images](/Images/graph.png)
+<center><img src = "/Images/graph.png"></center>
 
 2. An increase in training data for one language improves the performance of the model in other languages as well
 Following is a table of F1 scores after various modes of training:
