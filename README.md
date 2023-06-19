@@ -39,12 +39,12 @@ XLM-R uses the SentencePiece tokenizer, which is based on a type of subword segm
 
 1. For a small corpus, zero shot cross lingual transfer outperforms fine-tuning. As we increase the corpus size for fine tuning, we see an improvement in performance as compared to zero shot transfer.
 
-![image](https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/eee4dc80-1672-42f8-8da3-701374b6a653)
+![Images](/Images/graph.png)
 
 2. An increase in training data for one language improves the performance of the model in other languages as well
 Following is a table of F1 scores after various modes of training:
 
-![image](https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/0d585931-2612-4c8a-9f52-72eb40fe854c)
+![Images](/Images/f1_scores.png)
 
 # Test Your Own Inputs!
 
