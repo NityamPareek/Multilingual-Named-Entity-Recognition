@@ -2,7 +2,9 @@
 
 # Video Demonstration of Working
 
-![Video](/Images/MNER_Demo.mp4)
+
+https://github.com/NityamPareek/Multilingual-Named-Entity-Recognition/assets/97893479/acf2747d-a309-4a37-8843-cb4859cefa1e
+
 
 # Objective
 
